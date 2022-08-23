@@ -12,7 +12,7 @@ const Loginform = () => {
         </div>
         
         <div id='box_form'>
-            <input type="text" placeholder='UserName'/>
+            <input type="username" placeholder='UserName'/>
             <input type="password" placeholder='Password'/>
         </div>
         <div id='box_button'>

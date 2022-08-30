@@ -45,21 +45,22 @@ return (
 
        <div>
        <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table sx={{ minWidth: 650 }} className="table" size ="small" aria-label="simple table">
         <TableHead>
           <TableRow>
          
             <TableCell classes='col'>First Name</TableCell>
             <TableCell classes='col'>Last Name</TableCell>
-            <TableCell classes='col'>First Name</TableCell>
-            <TableCell classes='col'>First Name</TableCell>
-            <TableCell classes='col'>First Name</TableCell>
-            <TableCell classes='col'>First Name</TableCell>
-            <TableCell classes='col'>First Name</TableCell>
-            <TableCell classes='col'>First Name</TableCell>
-            <TableCell classes='col'>First Name</TableCell>
-            <TableCell classes='col'>First Name</TableCell>
-          </TableRow>
+            <TableCell classes='col'>Email</TableCell>
+            <TableCell classes='col'>City</TableCell>
+            <TableCell classes='col'>Street</TableCell>
+            <TableCell classes='col'>Street No</TableCell>
+            <TableCell classes='col'>Zip Code</TableCell>
+            <TableCell classes='col'>Lat Value</TableCell>
+            <TableCell classes='col'>Long Value</TableCell>
+            <TableCell classes='col'>Mobile No</TableCell>
+            <TableCell classes='col'>Options</TableCell>
+            </TableRow>
         </TableHead>
         <TableBody>
           {/*{rows.map((row) => (

@@ -18,7 +18,12 @@ const UserRegistrationform = ()  =>{
            UserRegistration
          </Typography>
 
-         
+         <div className='text_container'>
+              <TextField id="standard-basic" label="First Name" variant="standard" className='txt'/>
+              <TextField id="standard-basic" label="Last Name" variant="standard" className='txt'/>
+              <TextField id="standard-basic" label="Email Name" variant="standard" className='txt'/>
+              <TextField id="standard-basic" label="User Name" variant="standard" className='txt'/>
+         </div>
       
 
 

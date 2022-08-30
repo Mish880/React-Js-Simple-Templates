@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Dashboard.css"
+import {Link} from 'react-router-dom'
 
 const Dashboardform = () => {
   return (
@@ -10,11 +11,11 @@ const Dashboardform = () => {
               </div>
               <div class="menu">
                  <ul>
-                    <li><a href='#'>HOME</a></li>
-                    <li><a href='#'>ABOUT</a></li>
-                    <li><a href='#'>CUSTOMER</a></li>
-                    <li><a href='#'>BLOG</a></li>
-                    <li><a href='#'>CONTACT</a></li>
+                    <li><a href='#'><Link to='/dashboard'>DASHBOARD</Link></a></li>
+                    <li><a href='#'><Link to='/user'>REGISTRATION</Link></a></li>
+                    <li><a href='#'><Link to='/product'>PRODUCT</Link></a></li>
+                    <li><a href='#'><Link to='/product'>CART</Link></a></li>
+                  
                     
                  </ul>
               </div>
@@ -30,7 +31,7 @@ const Dashboardform = () => {
                   quasi laborum! In ea magni iure?
                 </p>
 
-               <button class="cn"><a href="#">Signup</a></button>
+               <button class="cn"><a href="#"><Link to='/user'>Signup</Link></a></button>
             
 
           <div class="form">

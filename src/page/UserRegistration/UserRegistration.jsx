@@ -8,9 +8,12 @@ import  TableBody from '@mui/material/TableBody';
 import  TableCell  from '@mui/material/TableCell';
 import  TableContainer  from '@mui/material/TableContainer';
 import  TableHead  from '@mui/material/TableHead';
+import  TableRow from '@mui/material/TableRow';
+import  Paper from '@mui/material/Paper';
 
 const UserRegistrationform = ()  =>{
-  return (
+  
+return (
         
       <div>
 
@@ -23,12 +26,62 @@ const UserRegistrationform = ()  =>{
               <TextField id="standard-basic" label="Last Name" variant="standard" className='txt'/>
               <TextField id="standard-basic" label="Email Name" variant="standard" className='txt'/>
               <TextField id="standard-basic" label="User Name" variant="standard" className='txt'/>
+              <TextField id="standard-password-input" label="password" type="password" autoComplete="current-password" variant="standard" className='txt'/>
+              
+              
+              <TextField id="standard-basic" label="City" variant="standard" className='txt'/>
+              <TextField id="standard-basic" label="Street" variant="standard" className='txt'/>
+              <TextField id="standard-basic" label="Street No" variant="standard" className='txt'/>
+              <TextField id="standard-basic" label="Zip Code" variant="standard" className='txt'/>
+              <TextField id="standard-basic" label="Lat Value" variant="standard" className='txt'/>
+              <TextField id="standard-basic" label="Long Value" variant="standard" className='txt'/>
+              <TextField id="standard-basic" label="Mobile No" variant="standard" className='txt'/>
          </div>
-      
+         
+          <div className='btn__container'>
+               <Button variant="contained" color='warning' className='clear'>Clear</Button>
+               <Button variant="contained" color='secondary' className='clear'>Save</Button>
+          </div>
 
-
-
-      </div>
+       <div>
+       <TableContainer component={Paper}>
+      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <TableHead>
+          <TableRow>
+         
+            <TableCell classes='col'>First Name</TableCell>
+            <TableCell classes='col'>Last Name</TableCell>
+            <TableCell classes='col'>First Name</TableCell>
+            <TableCell classes='col'>First Name</TableCell>
+            <TableCell classes='col'>First Name</TableCell>
+            <TableCell classes='col'>First Name</TableCell>
+            <TableCell classes='col'>First Name</TableCell>
+            <TableCell classes='col'>First Name</TableCell>
+            <TableCell classes='col'>First Name</TableCell>
+            <TableCell classes='col'>First Name</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {/*{rows.map((row) => (
+            <TableRow
+              key={row.name}
+              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+            >
+              <TableCell component="th" scope="row">
+                {row.name}
+              </TableCell>
+              <TableCell align="right">{row.calories}</TableCell>
+              <TableCell align="right">{row.fat}</TableCell>
+              <TableCell align="right">{row.carbs}</TableCell>
+              <TableCell align="right">{row.protein}</TableCell>
+            </TableRow>
+          ))}  */}
+        </TableBody>
+      </Table>
+    </TableContainer>
+       </div>
+       
+  </div>
          
 
 
@@ -36,4 +89,4 @@ const UserRegistrationform = ()  =>{
    );
 }
 
-export default UserRegistrationform
+export default UserRegistrationform;
